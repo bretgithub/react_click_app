@@ -35,8 +35,6 @@ class App extends React.Component {
         <Navbar
           score={this.state.score}
           topscore={this.state.topScore}
-          message={this.state.message}
-          messageClass={this.state.messageClass}
         />
         <Header />
         <div className="content">

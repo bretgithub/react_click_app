@@ -8,7 +8,6 @@ class Navbar extends React.Component {
                 <nav className="navbar">
                     <ul>
                         <li><a href="/">React Click Game</a></li>
-                        <li className={this.messageClass}>{this.message}</li>
                         <li>Score: {this.score} | Top Score: {this.topscore}</li>
                     </ul>
                 </nav>
