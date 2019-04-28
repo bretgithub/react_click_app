@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from "./components/navbar/navbar"
+import Header from "./components/header/header"
 import './App.css';
 
 // setting up as a class instead of a function
@@ -28,6 +29,9 @@ class App extends React.Component {
           message={this.state.message}
           messageClass={this.state.messageClass}
         />
+        <Header>
+
+        </Header>
         {/* <Header />
         <div className="content">
           {this.handleCharacters()}

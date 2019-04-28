@@ -5,17 +5,13 @@ class Navbar extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <ul>
-                    <li className="brand">
-                        <a href="/">Click Game</a>
-                    </li>
-                    {/* <li className={props.messageClass}>{props.message}</li> */}
-                    {/* <li>Score: {props.score} | Top Score: {props.topscore}</li> */}
-                </ul>
-
-
-
-
+                <nav className="navbar">
+                    <ul>
+                        <li><a href="/">React Click Game</a></li>
+                        <li>Click A Character To Begin</li>
+                        <li>Score</li>
+                    </ul>
+                </nav>
             </React.Fragment >
         )
     }

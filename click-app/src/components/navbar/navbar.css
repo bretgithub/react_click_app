@@ -1,0 +1,29 @@
+.navbar {
+    background: #bbdefb;
+    min-height: 70px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .88), 0 10px 10px rgba(0, 0, 0, .54);
+    color: black;
+    font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+    z-index: 99;
+    white-space: nowrap;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 26px 0;
+    width: 33.3%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
