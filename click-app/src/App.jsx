@@ -1,15 +1,14 @@
 import React from 'react';
 import Navbar from "./components/navbar/navbar"
 import Header from "./components/header/header"
+// import Content from "./components/content/content"
+import Images from "./components/images/images"
+import characters from "./characters.json"
+
 import './App.css';
 
-// setting up as a class instead of a function
+// setting up as a classful component instead of a functional component
 class App extends React.Component {
-  // Setting the initial state of the App component
-  constructor() {
-    super()
-    // this.handleShuffleChararcters = this.handleShuffleChararcters.bind(this)
-  }
 
   state = {
     score: 0,
@@ -17,8 +16,18 @@ class App extends React.Component {
     maxScore: 12,
     message: "Click on a character to begin!",
     messageClass: "",
-    // characters: characters
+    characters: characters
   };
+
+  handleCharacters = () => {
+    return this.state.characters.map((character) =>
+      <Images
+        image={character.image}
+        name={character.name}
+        key={character.id}
+      />
+    );
+  }
 
   render() {
     return (
@@ -29,18 +38,13 @@ class App extends React.Component {
           message={this.state.message}
           messageClass={this.state.messageClass}
         />
-        <Header>
-
-        </Header>
-        {/* <Header />
+        <Header />
         <div className="content">
           {this.handleCharacters()}
         </div>
-        <Footer /> */}
       </div>
     );
   }
-
 }
 
 export default App;

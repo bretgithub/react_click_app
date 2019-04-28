@@ -8,8 +8,8 @@ class Navbar extends React.Component {
                 <nav className="navbar">
                     <ul>
                         <li><a href="/">React Click Game</a></li>
-                        <li>Click A Character To Begin</li>
-                        <li>Score</li>
+                        <li className={this.messageClass}>{this.message}</li>
+                        <li>Score: {this.score} | Top Score: {this.topscore}</li>
                     </ul>
                 </nav>
             </React.Fragment >
