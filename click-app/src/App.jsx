@@ -19,12 +19,36 @@ class App extends React.Component {
     characters: characters
   };
 
+  handleGame = (name) => {
+    let resetGame = false;
+    const characters = this.state.characters.map(char => {
+      if (char.name === name) {
+        if (char.isClicked === false) {
+          // this.handleCorrect()
+          console.log("click")
+          return { ...char, isClicked: true }
+        } else {
+          resetGame = true;
+          return { ...char, isClicked: false }
+        }
+      }
+      return char
+    })
+
+    if (resetGame) {
+      this.setState({ characters: this.handleCharacters(characters) });
+    }
+  }
+
+
+
   handleCharacters = () => {
     return this.state.characters.map((character) =>
       <Images
         image={character.image}
         name={character.name}
         key={character.id}
+        onClick={this.handleGame}
       />
     );
   }
