@@ -27,3 +27,63 @@
     text-decoration: none;
     color: black;
 }
+
+.navbar .correct {
+    animation: 2s correct
+}
+
+.navbar .incorrect {
+    animation: 2s incorrect
+}
+
+@keyframes correct {
+    0% {
+        color: white
+    }
+
+    20% {
+        color: slateblue
+    }
+
+    40% {
+        color: teal
+    }
+
+    60% {
+        color: white
+    }
+
+    80% {
+        color: teal
+    }
+
+    to {
+        color: slateblue
+    }
+}
+
+@keyframes incorrect {
+    0% {
+        color: #fff
+    }
+
+    20% {
+        color: maroon
+    }
+
+    40% {
+        color: red
+    }
+
+    60% {
+        color: white
+    }
+
+    80% {
+        color: red
+    }
+
+    to {
+        color: maroon
+    }
+}

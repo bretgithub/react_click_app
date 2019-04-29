@@ -1,6 +1,8 @@
+// Required dependencies and imports
 import React from "react";
 import "./header.css";
 
+// Set as a classful component
 class Header extends React.Component {
     render() {
         return (
