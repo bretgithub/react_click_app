@@ -3,7 +3,7 @@ import Navbar from "./components/navbar/navbar"
 import Header from "./components/header/header"
 // import Content from "./components/content/content"
 import Images from "./components/images/images"
-import characters from "./characters.json.js"
+import characters from "./characters.json"
 
 import './App.css';
 
