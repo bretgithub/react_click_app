@@ -14,7 +14,7 @@
     {
         "id": 2,
         "name": "Bronn",
-        "image": "/assets/images/bronn.jpg",
+        "image": "assets/images/bronn.jpg",
         "isClicked": false
     },
     {
