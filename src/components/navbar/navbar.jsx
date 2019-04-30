@@ -10,7 +10,8 @@ class Navbar extends React.Component {
                 <nav className="navbar">
                     <ul>
                         {/* Text to user */}
-                        <li><a href="/">React Click Game</a></li>
+                        <li><a href="https://github.com/bretgithub/react_click_app">React Click Game</a></li>
+                        <li className="mobile-contact"><a href="mailto:bret.allan@gmail.com?subject=I love your work on React!&body=Hi Bret, I'd love to speak with you about..">Contact Me</a></li>
                         <li className={this.props.messageClass}>{this.props.message}</li>
                         <li>Score: {this.props.score} | Top Score: {this.props.topScore}</li>
 

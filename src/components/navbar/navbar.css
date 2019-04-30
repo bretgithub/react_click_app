@@ -28,6 +28,11 @@
     color: black;
 }
 
+.mobile-contact {
+    display: none!important;
+}
+
+
 .navbar .correct {
     animation: 2s correct
 }
@@ -87,3 +92,19 @@
         color: maroon
     }
 }
+
+/* For mobile, display contact li and make li take up a full row  */
+@media only screen and (max-width: 600px) {
+    .navbar li {
+        float: left;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .mobile-contact {
+        display: block!important;
+    }
+
+} 
